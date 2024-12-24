@@ -130,7 +130,6 @@ export function InputForm({ id }: Readonly<{ id?: string }>) {
         employeeId: +data.employeeId,
       });
     }
-    console.log({ ...data, employeeId: +data.employeeId });
     return mutationCreate.mutate({ ...data, employeeId: +data.employeeId });
   }
 

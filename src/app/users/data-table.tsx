@@ -138,7 +138,6 @@ export function DataTable<TData, TValue>({
     if (data) {
       const dataResponse = data as unknown as PaginationResponse<IUser>;
       const dataRows = dataResponse.data;
-      console.log(data);
       setRows(dataRows as TData[]);
     }
   }, [data]);
